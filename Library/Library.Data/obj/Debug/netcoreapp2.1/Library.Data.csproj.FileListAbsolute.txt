@@ -1,0 +1,11 @@
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\bin\Debug\netcoreapp2.1\Library.Data.deps.json
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\bin\Debug\netcoreapp2.1\Library.Data.dll
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.csprojAssemblyReference.cache
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.csproj.CoreCompileInputs.cache
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.AssemblyInfoInputs.cache
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.AssemblyInfo.cs
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\bin\Debug\netcoreapp2.1\Library.Data.runtimeconfig.json
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\bin\Debug\netcoreapp2.1\Library.Data.runtimeconfig.dev.json
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\bin\Debug\netcoreapp2.1\Library.Data.pdb
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.dll
+C:\Users\Stoyan Stoyanov\Desktop\homework\Library\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.pdb
