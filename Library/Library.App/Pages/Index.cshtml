@@ -19,11 +19,12 @@
         <tbody>
             @foreach (var b in Model.Books)
             {
-                <tr>
-                    <td><a asp-page="/BookPages/BookDetails" asp-route-id="@b.Id">@b.Title</a></td>
-                    <td><a asp-action="Books/Details/@b.Id">@b.Author.Name</a></td>
-                    <td>TODO</td>
-                </tr>
+            <tr>
+                <!-- <td><a asp-page="../BookPages/BookDetails" asp-route-id="@b.Id">@b.Title</a></td>-->
+                <td><a href="/BookPages/BookDetails/@b.Id">@b.Title</a></td>
+                <td><a asp-action="Books/Details" asp-all-route-id="@b.Id">@b.Author.Name</a></td>
+                <td>TODO</td>
+            </tr>
             }
         </tbody>
     </table>

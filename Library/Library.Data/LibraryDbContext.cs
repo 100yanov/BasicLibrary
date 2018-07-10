@@ -25,7 +25,7 @@ public    class LibraryDbContext: DbContext
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server = (localdb)\MSSQLLocalDB;Database=Library_Stucky; Integrated Security=true");
+                optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=Library_Stucky;Integrated Security=True;");
             }
             base.OnConfiguring(optionsBuilder);
         }

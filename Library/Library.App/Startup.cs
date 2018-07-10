@@ -58,6 +58,7 @@ namespace Library.App
             app.UseCookiePolicy();
 
             app.UseMvcWithDefaultRoute();
+			Seed.SeedDataBase();
             // app.UseMvc(/*routes=>routes.MapRoute(name:"default", template:"{}/")*/);
         }
     }
