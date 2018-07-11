@@ -7,12 +7,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Library.Data.Models;
+using Library.App.Models;
 
 namespace Library.App.Pages
 {
-    public class IndexModel : PageModel
+	public class IndexModel : PageModel
     {
-        private readonly LibraryDbContext context;
+		
+
+		private readonly LibraryDbContext context;
 
         public IndexModel(LibraryDbContext context)
         {
@@ -20,11 +23,13 @@ namespace Library.App.Pages
         }
 
         public string Name { get; set; }
-        public ICollection<Book> Books { get; set; }
+        public ICollection<BookDisplayViewModel> Books { get; set; }
 
         public void OnGet()
         {
-            this.Books = context.Books.Include(b => b.Author)
+            this.Books = context.Books
+				.Include(b => b.Author)
+				.Select(b=>new BookDisplayViewModel(b))
                 .ToList();
         }
     }

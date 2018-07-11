@@ -9,15 +9,8 @@ namespace Library.App.Pages.BookPages
 {
     public class BookDetailsModel : PageModel
     {
-		public IActionResult OnGet( int id )
-		{
-			if (id == 0)
-			{
-				return Page();
-			}
-			return RedirectToPage("/");
-		}
-		public void OnGet()
+		
+		public void OnGet( int id )
         {
            
         }

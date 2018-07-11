@@ -53,9 +53,7 @@ E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.TagHelpers.input.cache
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.TagHelpers.output.cache
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.RazorCoreGenerate.cache
-E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\About.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\BookPages\BookDetails.g.cshtml.cs
-E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs

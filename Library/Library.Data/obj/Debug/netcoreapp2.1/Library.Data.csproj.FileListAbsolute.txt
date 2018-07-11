@@ -20,3 +20,6 @@ E:\programming\BasicLibrary\Library\Library.Data\bin\Debug\netcoreapp2.1\Library
 E:\programming\BasicLibrary\Library\Library.Data\bin\Debug\netcoreapp2.1\Library.Data.dll
 E:\programming\BasicLibrary\Library\Library.Data\bin\Debug\netcoreapp2.1\Library.Data.pdb
 E:\programming\BasicLibrary\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.csprojAssemblyReference.cache
+E:\programming\BasicLibrary\Library\Library.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.dll
+E:\programming\BasicLibrary\Library\Library.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.xml
+E:\programming\BasicLibrary\Library\Library.Data\obj\Debug\netcoreapp2.1\Library.Data.csproj.CopyComplete

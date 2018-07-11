@@ -5,7 +5,7 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-<button class="btn btn-success">Add New Book</button>
+<a asp-page="/BookPages/Add" class="btn btn-success">Add New Book</a>
 <div class="container">
 
     <table class="table table-striped">
@@ -19,12 +19,11 @@
         <tbody>
             @foreach (var b in Model.Books)
             {
-            <tr>
-                <!-- <td><a asp-page="../BookPages/BookDetails" asp-route-id="@b.Id">@b.Title</a></td>-->
-                <td><a href="/BookPages/BookDetails/@b.Id">@b.Title</a></td>
-                <td><a asp-action="Books/Details" asp-all-route-id="@b.Id">@b.Author.Name</a></td>
-                <td>TODO</td>
-            </tr>
+                <tr>
+                    <td><a asp-page="/BookPages/BookDetails" asp-route-id="@b.Id">@b.Title</a></td>
+                    <td><a asp-page="/Authors/AuthorDetails" asp-route-id="@b.AuthorId">@b.Author</a></td>
+                    <td>@b.Taken</td>
+                </tr>
             }
         </tbody>
     </table>
