@@ -12,10 +12,14 @@ namespace Library.App.Models
 		[Required]
 		[BindProperty]
 		public string  Title { get; set; }
+
 		[Required]
 		[BindProperty]
 		public string Author{ get; set; }
 		
+		[BindProperty]
+		public string Description { get; set; }
+
 		[BindProperty]
 		[Url]
 		public string ImageUrl{ get; set; }

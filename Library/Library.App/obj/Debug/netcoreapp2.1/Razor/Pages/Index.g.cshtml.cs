@@ -68,7 +68,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h1>\r\n");
             EndContext();
             BeginContext(103, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5ee346b69161445991c895280a131757", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a8082eeae974036834dc0b6c62feb0e", async() => {
                 BeginContext(156, 12, true);
                 WriteLiteral("Add New Book");
                 EndContext();
@@ -112,7 +112,7 @@ Write(ViewData["Title"]);
             WriteLiteral("                <tr>\r\n                    <td>");
             EndContext();
             BeginContext(535, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f2f54ae0e38480290c579b7d11dcba0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b831bcf623ec41b5834595058a0f48cb", async() => {
                 BeginContext(594, 7, false);
 #line 23 "E:\programming\BasicLibrary\Library\Library.App\Pages\Index.cshtml"
                                                                              Write(b.Title);
@@ -151,7 +151,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</td>\r\n                    <td>");
             EndContext();
             BeginContext(636, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e73203402114ceda078b31b74a3e995", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e70bdf0031e840d09baa29714118b430", async() => {
                 BeginContext(701, 8, false);
 #line 24 "E:\programming\BasicLibrary\Library\Library.App\Pages\Index.cshtml"
                                                                                    Write(b.Author);
