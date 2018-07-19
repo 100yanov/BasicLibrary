@@ -59,5 +59,5 @@ namespace Library.App.Pages.BookPages
 			}
 			return RedirectToPage("/");
 		}
-		}
+		} 
 }

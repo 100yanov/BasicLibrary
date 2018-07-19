@@ -28,7 +28,7 @@ namespace Library.App.Models
 		public string Title { get; set; }
 		public string Author { get; set; }
 		public int AuthorId { get; set; }
-		public string Taken { get; set; }
+		public string Taken { get; set; ]
 		public string Description { get; set; }
 		public string ImageUrl { get; set; }
 	}
