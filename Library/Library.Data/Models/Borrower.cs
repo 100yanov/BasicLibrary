@@ -5,9 +5,14 @@ namespace Library.Data.Models
 {
     public class Borrower
     {
-        public Borrower()
+		public Borrower()
+		{
+			this.Books = new List<Book>();
+		}
+        public Borrower( string name )
+			:this()
         {
-            this.Books = new List<Book>();
+			this.Name = name;
         }
 
         public int Id { get; set; }
@@ -15,7 +20,7 @@ namespace Library.Data.Models
         [MaxLength(50)]
         public string Name { get; set; }
 
-        [Required]
+   
         [MaxLength(100)]
         public string Address { get; set; }
 

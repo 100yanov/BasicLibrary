@@ -67,3 +67,6 @@ E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.Views.pdb
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.csproj.CopyComplete
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\BookPages\Add.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Authors\Details.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Borrowers\Add.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\BookPages\Borrow.g.cshtml.cs

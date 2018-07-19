@@ -6,12 +6,17 @@
 
 <div class="row">
     <div class="col-md-2">
-        <img  src="@Model.ImageUrl" class="img-thumbnail img-fluid">
+        <img  src="@Model.Book.ImageUrl" class="img-thumbnail img-fluid">
     </div>
 
-    <div class="pull-left col-lg-pull-3 ">
-        <h2>@Model.Name</h2>
-        <h3>@Model.Author</h3>
-        <p>@Model.Description</p>
+    <div class="pull-left col-9 ">
+        <h2>@Model.Book.Title</h2>
+        <h3>@Model.Book.Author</h3>
+        <p>@Model.Book.Description</p>
+        @if (Model.Book.Taken != "Borrowed")
+        {
+            <a asp-page="Borrow" asp-route-id="@Model.Book.Id">Borrow</a>
+        }
+
     </div>
 </div>

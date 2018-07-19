@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Library.App.Models;
 using Library.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -17,10 +18,7 @@ namespace Library.App.Pages.BookPages
 		{
 			this.context = context;
 		}
-		public string Name { get; set; }
-		public string Description { get; set; }
-		public string ImageUrl { get; set; }
-		public string Author { get; set; }
+		public BookDisplayViewModel Book { get; set; }
 
 		public IActionResult OnGet( int id )
         {
@@ -29,10 +27,7 @@ namespace Library.App.Pages.BookPages
 			{
 				return RedirectToPage("/");
 			}
-			this.Name = book.Title;
-			this.Description = book.Description;
-			this.Author = book.Author.Name;
-			this.ImageUrl = book.CoverImage;
+			this.Book = new BookDisplayViewModel(book);
 
 			return Page();
         }

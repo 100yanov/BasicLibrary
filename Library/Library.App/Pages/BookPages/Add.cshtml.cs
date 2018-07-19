@@ -42,10 +42,11 @@ namespace Library.App.Pages.BookPages
 			var book = new Book()
 			{
 				Title = this.Book.Title,
-				Author = author,
+				AuthorId = author.Id,
 				Description = this.Book.Description ?? "",
 				CoverImage = this.Book.ImageUrl ?? ""
 			};
+			
 			context.Books.Add(book);
 			context.SaveChanges();
 

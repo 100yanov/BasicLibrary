@@ -1,0 +1,17 @@
+﻿@page
+@model Library.App.Pages.Borrowers.AddModel
+@{
+    ViewData["Title"] = "Add Borrower";
+}
+
+<h2>@ViewData["Title"]</h2>
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="@Model.Name"></label>
+        <input class="form-control" type="text" asp-for="@Model.Name" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Add" />
+    </div>
+</form>
