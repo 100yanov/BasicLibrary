@@ -1,0 +1,22 @@
+﻿@page "{id:int}"
+@model Library.App.Pages.Books.BookDetailsModel
+@{
+    ViewData["Title"] = "BookDetails";
+}
+
+<div class="row">
+    <div class="col-md-2">
+        <img  src="@Model.Book.ImageUrl" class="img-thumbnail img-fluid">
+    </div>
+
+    <div class="pull-left col-9 ">
+        <h2>@Model.Book.Title</h2>
+        <h3>@Model.Book.Author</h3>
+        <p>@Model.Book.Description</p>
+        @if (Model.Book.Taken != "Borrowed")
+        {
+            <a asp-page="Borrow" asp-route-id="@Model.Book.Id">Borrow</a>
+        }
+
+    </div>
+</div>

@@ -19,9 +19,9 @@ public    class LibraryDbContext: DbContext
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors{ get; set; }
         public DbSet<Borrower> Borrowers{ get; set; }
-       
+		public DbSet<BorrowersBooks> BorrowedBooks { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
@@ -39,12 +39,22 @@ public    class LibraryDbContext: DbContext
                 .HasOne(e => e.Author)
                 .WithMany(a => a.Books)
                 .HasForeignKey(e => e.AuthorId);
-            builder.Entity<Book>()
-                .HasOne(e => e.Borrower)
-                .WithMany(a => a.Books)
-                .HasForeignKey(e => e.BorrowerId);
 
-            base.OnModelCreating(builder);
+			builder.Entity<BorrowersBooks>()
+				 .HasOne(e => e.Book)
+				 .WithMany(b => b.Borrowers)
+				 .HasForeignKey(e => e.BookId);
+
+			builder.Entity<BorrowersBooks>()
+				 .HasOne(e => e.Borrower)
+				 .WithMany(b => b.Books)
+				 .HasForeignKey(e => e.BorrowerId);
+
+			builder.Entity<BorrowersBooks>()
+				.HasKey(b => new { b.BookId, b.BorrowerId });
+			
+
+			base.OnModelCreating(builder);
         }
     }
 }

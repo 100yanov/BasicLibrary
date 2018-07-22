@@ -42,8 +42,6 @@ namespace Library.Data.Migrations
 
                     b.Property<int>("AuthorId");
 
-                    b.Property<int?>("BorrowerId");
-
                     b.Property<string>("CoverImage");
 
                     b.Property<string>("Description")
@@ -56,8 +54,6 @@ namespace Library.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
-
-                    b.HasIndex("BorrowerId");
 
                     b.ToTable("Books");
                 });
@@ -80,16 +76,42 @@ namespace Library.Data.Migrations
                     b.ToTable("Borrowers");
                 });
 
+            modelBuilder.Entity("Library.Data.Models.BorrowersBooks", b =>
+                {
+                    b.Property<int>("BookId");
+
+                    b.Property<int>("BorrowerId");
+
+                    b.Property<DateTime?>("EndDate");
+
+                    b.Property<DateTime>("StartDate");
+
+                    b.HasKey("BookId", "BorrowerId");
+
+                    b.HasIndex("BorrowerId");
+
+                    b.ToTable("BorrowedBooks");
+                });
+
             modelBuilder.Entity("Library.Data.Models.Book", b =>
                 {
                     b.HasOne("Library.Data.Models.Author", "Author")
                         .WithMany("Books")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Library.Data.Models.BorrowersBooks", b =>
+                {
+                    b.HasOne("Library.Data.Models.Book", "Book")
+                        .WithMany("Borrowers")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Library.Data.Models.Borrower", "Borrower")
                         .WithMany("Books")
-                        .HasForeignKey("BorrowerId");
+                        .HasForeignKey("BorrowerId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

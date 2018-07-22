@@ -1,0 +1,15 @@
+﻿@page
+@model Library.App.Pages.Books.AddModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h2>Add</h2>
+<form  method="post">
+    @Html.EditorFor(m=>m.Book);
+    <div class="form-group">
+        <input class="btn btn-success" type="submit" value="Add" />
+        <a class="btn btn-default" href="/">Cancel</a>
+    </div>
+   
+</form>

@@ -7,7 +7,7 @@ namespace Library.Data.Models
     {
 		public Borrower()
 		{
-			this.Books = new List<Book>();
+			this.Books = new List<BorrowersBooks>();
 		}
         public Borrower( string name )
 			:this()
@@ -24,6 +24,6 @@ namespace Library.Data.Models
         [MaxLength(100)]
         public string Address { get; set; }
 
-        public ICollection<Book> Books { get; set; }
+        public ICollection<BorrowersBooks> Books { get; set; }
     }
 }

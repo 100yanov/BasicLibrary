@@ -12,7 +12,7 @@ namespace Library.App.Models
 		{
 			this.Id = book.Id;
 			this.Title = book.Title;
-			this.Taken = book.BorrowerId != null ? "Borowed" : "At Home";
+			this.Taken = book.IsBorrowed ? "Borowed" : "At Home";
 		}
 		public int Id { get; set; }
 		public string Title { get; set; }

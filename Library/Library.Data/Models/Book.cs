@@ -2,13 +2,20 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Text;
 
 namespace Library.Data.Models
 {
     public class Book 
     {
-		//[BindProperty]
+		private ICollection<BorrowersBooks> borrowers;
+		private BorrowersBooks lastBorrower;
+
+		public Book()
+		{
+			this.Borrowers = new List<BorrowersBooks>();
+		}
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]
@@ -22,10 +29,34 @@ namespace Library.Data.Models
         public Author Author{ get; set; }
 
         public int AuthorId { get; set; }
+		
+		public ICollection<BorrowersBooks> Borrowers
+		{
+			get => this.borrowers;
+			set
+			{
+				this.borrowers = value;
+				this.lastBorrower = borrowers.LastOrDefault();
+			}
+		}
 
-        public Borrower Borrower { get; set; }
+		public bool IsBorrowed
+		{
+			get
+			{
+				var borrower = lastBorrower;// this.Borrowers.FirstOrDefault();
+				if (borrower == null)
+				{
+					return false;
+				}
 
-        public int? BorrowerId { get; set; }
+				return borrower.EndDate == null 
+					|| borrower
+					.EndDate
+					.Value.Date <= DateTime.Now.Date;
+			}
+		}
+		
 
-    }
+	}
 }

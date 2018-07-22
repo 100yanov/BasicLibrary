@@ -29,6 +29,7 @@ namespace Library.App.Pages
         {
             this.Books = context.Books
 				.Include(b => b.Author)
+				//.Include(b=>b.Borrowers)
 				.Select(b=>new BookDisplayViewModel(b))
                 .ToList();
         }

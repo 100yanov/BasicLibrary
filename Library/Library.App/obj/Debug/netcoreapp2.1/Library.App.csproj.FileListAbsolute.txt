@@ -53,7 +53,6 @@ E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.TagHelpers.input.cache
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.TagHelpers.output.cache
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.RazorCoreGenerate.cache
-E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\BookPages\BookDetails.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs
@@ -66,7 +65,10 @@ E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.RazorTargetAssemblyInfo.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.Views.pdb
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Library.App.csproj.CopyComplete
-E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\BookPages\Add.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Authors\Details.g.cshtml.cs
 E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Borrowers\Add.g.cshtml.cs
-E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\BookPages\Borrow.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Books\Add.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Books\BookDetails.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Books\Borrow.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\DisplayTemplates\BookDisplayViewModel.g.cshtml.cs
+E:\programming\BasicLibrary\Library\Library.App\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\EditorTemplates\BookAddViewModel.g.cshtml.cs

@@ -5,26 +5,7 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-<a asp-page="/BookPages/Add" class="btn btn-success">Add New Book</a>
+<a asp-page="/Books/Add" class="btn btn-success">Add New Book</a>
 <div class="container">
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var b in Model.Books)
-            {
-                <tr>
-                    <td><a asp-page="/BookPages/BookDetails" asp-route-id="@b.Id">@b.Title</a></td>
-                    <td><a asp-page="/Authors/Details" asp-route-id="@b.AuthorId">@b.Author</a></td>
-                    <td>@b.Taken</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    @Html.DisplayFor(m=>m.Books, "BookDisplayViewModel");
 </div>
